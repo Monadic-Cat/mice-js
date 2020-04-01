@@ -1,0 +1,22 @@
+[package]
+name = "mice-js"
+version = "0.1.0"
+authors = ["Monadic Cat <greenmonadcat@gmail.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[package.metadata.docs.rs]
+targets = ["wasm32-unknown-unknown"]
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+mice = "0.7"
+wasm-bindgen = "0.2.60"
+js-sys = "0.3.37"
+rand = "0.7"
+
+[dev-dependencies]
+wasm-bindgen-test = "0.3.10"
